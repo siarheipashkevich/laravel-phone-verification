@@ -2,7 +2,6 @@
 
 namespace Esupl\PhoneVerification\Http\Requests;
 
-use Illuminate\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Esupl\PhoneVerification\Events\PhoneVerified;
 
@@ -53,16 +52,5 @@ class PhoneVerificationRequest extends FormRequest
         $this->user()->markPhoneAsVerified();
 
         event(new PhoneVerified($this->user()));
-    }
-
-    /**
-     * Configures the validator instance.
-     *
-     * @param Validator $validator
-     * @return Validator
-     */
-    public function withValidator(Validator $validator): Validator
-    {
-        return $validator;
     }
 }

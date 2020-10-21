@@ -4,7 +4,6 @@ namespace Esupl\PhoneVerification\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\{Redirect, URL};
 use Esupl\PhoneVerification\Contracts\MustVerifyPhone;
 
 /**
@@ -19,17 +18,14 @@ class EnsurePhoneIsVerified
      *
      * @param Request $request
      * @param Closure $next
-     * @param string|null $redirectToRoute
      * @return mixed
      */
-    public function handle(Request $request, Closure $next, $redirectToRoute = null)
+    public function handle(Request $request, Closure $next)
     {
         $user = $request->user();
 
         if (!$user || ($user instanceof MustVerifyPhone && !$user->hasVerifiedPhone())) {
-            return $request->expectsJson()
-                ? abort(403, 'Your phone number is not verified.')
-                : Redirect::guest(URL::route($redirectToRoute ?: 'phone.verification.notice'));
+            abort(403, 'Your phone number is not verified.');
         }
 
         return $next($request);
