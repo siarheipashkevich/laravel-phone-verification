@@ -1,15 +1,15 @@
 <?php
 
-namespace Esupl\PhoneVerification\Http\Middleware;
+namespace Pashkevich\PhoneVerification\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Esupl\PhoneVerification\Contracts\MustVerifyPhone;
+use Pashkevich\PhoneVerification\Contracts\MustVerifyPhone;
 
 /**
  * Class EnsurePhoneIsVerified
  *
- * @package Esupl\PhoneVerification\Http\Middleware
+ * @package Pashkevich\PhoneVerification\Http\Middleware
  */
 class EnsurePhoneIsVerified
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Esupl\PhoneVerification\Notifications;
+namespace Pashkevich\PhoneVerification\Notifications;
 
 use Illuminate\Notifications\Notification;
-use Esupl\PhoneVerification\Contracts\MustVerifyPhone;
-use Esupl\PhoneVerification\Notifications\Channels\VerifyPhoneChannel;
-use Esupl\PhoneVerification\Notifications\Messages\VerifyPhoneMessage;
+use Pashkevich\PhoneVerification\Contracts\MustVerifyPhone;
+use Pashkevich\PhoneVerification\Notifications\Channels\VerifyPhoneChannel;
+use Pashkevich\PhoneVerification\Notifications\Messages\VerifyPhoneMessage;
 
 /**
  * Class VerifyPhone
  *
- * @package Esupl\PhoneVerification\Notifications
+ * @package Pashkevich\PhoneVerification\Notifications
  */
 class VerifyPhone extends Notification
 {

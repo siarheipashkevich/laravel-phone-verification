@@ -1,11 +1,11 @@
 <?php
 
-namespace Esupl\PhoneVerification\Concerns;
+namespace Pashkevich\PhoneVerification\Concerns;
 
 /**
  * Trait MustVerifyPhone
  *
- * @package Esupl\PhoneVerification\Concerns
+ * @package Pashkevich\PhoneVerification\Concerns
  */
 trait MustVerifyPhone
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Esupl\PhoneVerification;
+namespace Pashkevich\PhoneVerification;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class PhoneVerificationServiceProvider
  *
- * @package Esupl\PhoneVerification
+ * @package Pashkevich\PhoneVerification
  */
 class PhoneVerificationServiceProvider extends ServiceProvider
 {

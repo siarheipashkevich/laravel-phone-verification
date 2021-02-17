@@ -1,11 +1,11 @@
 <?php
 
-namespace Esupl\PhoneVerification\Notifications\Messages;
+namespace Pashkevich\PhoneVerification\Notifications\Messages;
 
 /**
  * Class VerifyPhoneMessage
  *
- * @package Esupl\PhoneVerification\Notifications\Messages
+ * @package Pashkevich\PhoneVerification\Notifications\Messages
  */
 class VerifyPhoneMessage
 {

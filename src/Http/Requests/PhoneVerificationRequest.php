@@ -1,14 +1,14 @@
 <?php
 
-namespace Esupl\PhoneVerification\Http\Requests;
+namespace Pashkevich\PhoneVerification\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Esupl\PhoneVerification\Events\PhoneVerified;
+use Pashkevich\PhoneVerification\Events\PhoneVerified;
 
 /**
  * Class PhoneVerificationRequest
  *
- * @package Esupl\PhoneVerification\Http\Requests
+ * @package Pashkevich\PhoneVerification\Http\Requests
  */
 class PhoneVerificationRequest extends FormRequest
 {

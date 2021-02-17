@@ -1,18 +1,17 @@
 <?php
 
-namespace Esupl\LaravelPhoneVerification\Tests;
+namespace Pashkevich\PhoneVerification\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Esupl\LaravelPhoneVerification\LaravelPhoneVerificationServiceProvider;
+use Pashkevich\PhoneVerification\PhoneVerificationServiceProvider;
 
 class ExampleTest extends TestCase
 {
-
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
-        return [LaravelPhoneVerificationServiceProvider::class];
+        return [PhoneVerificationServiceProvider::class];
     }
-    
+
     /** @test */
     public function true_is_true()
     {

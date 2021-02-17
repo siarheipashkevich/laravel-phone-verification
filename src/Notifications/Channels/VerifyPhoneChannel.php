@@ -1,14 +1,14 @@
 <?php
 
-namespace Esupl\PhoneVerification\Notifications\Channels;
+namespace Pashkevich\PhoneVerification\Notifications\Channels;
 
 use Illuminate\Notifications\Notification;
-use Esupl\PhoneVerification\Contracts\SMSGateway;
+use Pashkevich\PhoneVerification\Contracts\SMSGateway;
 
 /**
  * Class VerifyPhoneChannel
  *
- * @package Esupl\PhoneVerification\Notifications\Channels
+ * @package Pashkevich\PhoneVerification\Notifications\Channels
  */
 class VerifyPhoneChannel
 {

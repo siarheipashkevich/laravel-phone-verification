@@ -1,11 +1,11 @@
 {
-    "name": "esupl/laravel-phone-verification",
+    "name": "pashkevich/laravel-phone-verification",
     "description": "",
     "keywords": [
-        "esupl",
+        "pashkevich",
         "laravel-phone-verification"
     ],
-    "homepage": "https://github.com/esupl/laravel-phone-verification",
+    "homepage": "https://github.com/siarheipashkevich/laravel-phone-verification",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Esupl\\PhoneVerification\\": "src"
+            "Pashkevich\\PhoneVerification\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Esupl\\PhoneVerification\\Tests\\": "tests"
+            "Pashkevich\\PhoneVerification\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Esupl\\PhoneVerification\\PhoneVerificationServiceProvider"
+                "Pashkevich\\PhoneVerification\\PhoneVerificationServiceProvider"
             ]
         }
     }

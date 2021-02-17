@@ -1,11 +1,11 @@
 <?php
 
-namespace Esupl\PhoneVerification\Contracts;
+namespace Pashkevich\PhoneVerification\Contracts;
 
 /**
  * Interface SMSGateway
  *
- * @package Esupl\PhoneVerification\Contracts
+ * @package Pashkevich\PhoneVerification\Contracts
  */
 interface SMSGateway
 {

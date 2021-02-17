@@ -1,14 +1,14 @@
 <?php
 
-namespace Esupl\PhoneVerification\Events;
+namespace Pashkevich\PhoneVerification\Events;
 
 use Illuminate\Queue\SerializesModels;
-use Esupl\PhoneVerification\Contracts\MustVerifyPhone;
+use Pashkevich\PhoneVerification\Contracts\MustVerifyPhone;
 
 /**
  * Class PhoneVerified
  *
- * @package Esupl\PhoneVerification\Events
+ * @package Pashkevich\PhoneVerification\Events
  */
 class PhoneVerified
 {
